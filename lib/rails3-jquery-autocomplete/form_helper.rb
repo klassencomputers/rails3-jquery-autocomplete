@@ -49,4 +49,7 @@ class ActionView::Helpers::FormBuilder #:nodoc:
   def autocomplete_field(method, source, options = {})
     @template.autocomplete_field(@object_name, method, source, objectify_options(options))
   end
+   def autocomplete_text_area(method, source, options = {})
+    @template.autocomplete_text_area(@object_name, method, source, objectify_options(options))
+  end
 end
