@@ -12,6 +12,11 @@ module ActionView
         options["data-autocomplete"] = source
         text_field(object_name, method, rewrite_autocomplete_option(options))
       end
+	  
+	   def autocomplete_text_area(object_name, method, source, options ={})
+        options["data-autocomplete"] = source
+        text_area(object_name, method, rewrite_autocomplete_option(options))
+      end
     end
 
     module FormTagHelper
